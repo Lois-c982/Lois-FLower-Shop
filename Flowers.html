@@ -1,259 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lois' Flower Shop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
   <body>
-    
-   <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg bg-danger">
-    <div class="container">
-      <a class="navbar-brand text-white" href="#">Lois' Flower Shop...</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">Lois' Flower Shop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Head section -->
+    <header class="text-white text-center py-5 bg-danger">
+      <div class="container">
+        <h1>Flowers for Every Occasion</h1>
+        <p class="lead">Freshly picked and arranged everyday</p>
+        <a href="#products" class="btn btn-danger">Shop Now</a>
+      </div>
+    </header>
+
+    <!-- Different Products/best sellers -->
+    <section id="products" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Bestsellers</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://www.grandflowers.co.uk/upload/mt/gf944/products/20159444-passion-red-rose-bouquet-3.jpg"
+                class="card-img-top"
+                alt="Bouquet"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Rose Bouquet</h5>
+                <p class="card-text">
+                  A classic bouquet of fresh red roses.
+                </p>
+                <a href="#" class="btn btn-danger">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://lovflowers.co.uk/cdn/shop/files/unicorn-tulips_5760x.jpg?v=1706130409"
+                class="card-img-top"
+                alt="Tulips"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Spring Tulips</h5>
+                <p class="card-text">
+                  Beautiful tulips in mixed colors.
+                </p>
+                <a href="#" class="btn btn-danger">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://thefauxflowercompany.com/cdn/shop/files/ArtificialflowersluxuryfauxsilkwhitecasablancalilykinghamvaselifelikerealisticfauxflowersABP04B3ABY3018WH.jpg?v=1687699662&width=1000"
+                class="card-img-top"
+                alt="Lilies"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Elegant Lilies</h5>
+                <p class="card-text">Pure white lilies.</p>
+                <a href="#" class="btn btn-danger">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel of flower arrangements -->
+    <section id="featured" class="py-3">
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://www.townendflorist.co.uk/Websites/50/images/product/1867585535large.jpg?ver=33"
+                class="d-block w-100"
+                alt="Featured 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.beau-k-eastbourne.co.uk/Websites/747/images/product/1867814007large.jpg?ver=48"
+                class="d-block w-100"
+                alt="Featured 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://freddiesflowers-marketing-assets.s3.eu-west-2.amazonaws.com/2025/13-16/13-16-3/GIFTING/13-16-3-C-CLASSIC.jpg"
+                class="d-block w-100"
+                alt="Featured 3"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Text for the carousel -->
+    <section class="py-3">
+      <div class="container text-center">
+        <p class="lead">Discover our range of flower arrangements.</p>
+      </div>
+    </section>
+
+    <!-- Advanced Layout Section: Nested Grids -->
+    <section id="advanced-layout" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Featured Collections</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="p-3 border bg-light">
+              <h4>Seasonal Collection</h4>
+              <div class="row">
+                <div class="col-6">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    class="img-fluid"
+                    alt="Seasonal 1"
+                  />
+                </div>
+                <div class="col-6">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    class="img-fluid"
+                    alt="Seasonal 2"
+                  />
+                </div>
+              </div>
+              <p class="mt-2">
+                Discover our seasonal collection with exclusive offers.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 border bg-light">
+              <h4>Exclusive Arrangements</h4>
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="https://via.placeholder.com/100"
+                    class="img-fluid"
+                    alt="Exclusive 1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://via.placeholder.com/100"
+                    class="img-fluid"
+                    alt="Exclusive 2"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://via.placeholder.com/100"
+                    class="img-fluid"
+                    alt="Exclusive 3"
+                  />
+                </div>
+              </div>
+              <p class="mt-2">
+                Arrangements crafted for special occasions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Trigger and Modal -->
+    <div class="text-center my-5">
       <button
-        class="navbar-toggler"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
+        class="btn btn-danger"
+        data-bs-toggle="modal"
+        data-bs-target="#promoModal"
       >
-        <span class="navbar-toggler-icon"></span>
+        Learn More About Our Services
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#products">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
     </div>
-  </nav>
 
-   <!-- Head section with text -->
-   <header class="text-white text-center py-5 bg-danger">
-    <div class="container">
-      <h1>Flowers for Every Occasion</h1>
-      <p class="lead">Freshly picked and arranged everyday</p>
-      <a href="#products" class="btn btn-danger">Shop Now</a>
-    </div>
-  </header>
-
-<!-- Different Products/best sellers -->
-<section id="products" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Our Bestsellers</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="https://www.grandflowers.co.uk/upload/mt/gf944/products/20159444-passion-red-rose-bouquet-3.jpg"
-              class="card-img-top"
-              alt="Bouquet"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Rose Bouquet</h5>
-              <p class="card-text">
-                A classic bouquet of fresh red roses.
-              </p>
-              <a href="#" class="btn btn-danger">Order Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="https://lovflowers.co.uk/cdn/shop/files/unicorn-tulips_5760x.jpg?v=1706130409"
-              class="card-img-top"
-              alt="Tulips"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Spring Tulips</h5>
-              <p class="card-text">
-                Beautiful tulips in mixed colors.
-              </p>
-              <a href="#" class="btn btn-danger">Order Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="https://thefauxflowercompany.com/cdn/shop/files/ArtificialflowersluxuryfauxsilkwhitecasablancalilykinghamvaselifelikerealisticfauxflowersABP04B3ABY3018WH.jpg?v=1687699662&width=1000"
-              class="card-img-top"
-              alt="Lilies"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Elegant Lilies</h5>
-              <p class="card-text">
-                Pure white lilies.
-              </p>
-              <a href="#" class="btn btn-danger">Order Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
- <!-- Carousel of flower arrangements -->
- <section id="featured" class="py-3">
-    <div class="container">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="https://www.townendflorist.co.uk/Websites/50/images/product/1867585535large.jpg?ver=33"
-              class="d-block w-100"
-              alt="Featured 1"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://www.beau-k-eastbourne.co.uk/Websites/747/images/product/1867814007large.jpg?ver=48"
-              class="d-block w-100"
-              alt="Featured 2"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://freddiesflowers-marketing-assets.s3.eu-west-2.amazonaws.com/2025/13-16/13-16-3/GIFTING/13-16-3-C-CLASSIC.jpg"
-              class="d-block w-100"
-              alt="Featured 3"
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Text for the carousel -->
-  <section class="py-3">
-    <div class="container text-center">
-      <p class="lead">Discover our range of flower arrangements.</p>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Our Services</h2>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <h4>Custom Bouquets</h4>
-          <p>Handcrafted floral arrangements for any occasion.</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Wedding Arrangements</h4>
-          <p>Floral designs to make your big day special.</p>
-        </div>
-        <div class="col-md-4">
-          <h4>Same-Day Delivery</h4>
-          <p>Fresh flowers delivered right to your doorstep.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Get in Touch</h2>
-      <form>
-        <div class="mb-3">
-          <label class="form-label">Name</label>
-          <input type="text" class="form-control" placeholder="Your Name" />
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Email</label>
-          <input type="email" class="form-control" placeholder="Your Email" />
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Message</label>
-          <textarea
-            class="form-control"
-            rows="4"
-            placeholder="Your Message"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-danger">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-white text-center py-3 bg-danger">
-    <p>&copy; 2025 Lois' Flower Shop. All Rights Reserved.</p>
-    <a
-      href="https://www.google.com/maps/place/Lois'+Flower+Shop/@30.3598032,-89.1635514,17z/data=!3m1!4b1!4m6!3m5!1s0x889c3cc9d26cfaa1:0x7194bedffad4e326!8m2!3d30.3598032!4d-89.1609765!16s%2Fg%2F11bbxkzq00?entry=ttu"
-      >Visit the flower shop in person!</a
+    <div
+      class="modal fade"
+      id="promoModal"
+      tabindex="-1"
+      aria-labelledby="promoModalLabel"
+      aria-hidden="true"
     >
-  </footer>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="promoModalLabel">Special Promotion</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Enjoy exclusive offers on custom bouquets and arrangements.
+            Contact us for more details.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+            <a href="#contact" class="btn btn-danger">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // JavaScript to add a hover effect to each card using Bootstrap's shadow class
-    document.querySelectorAll(".card").forEach(function (card) {
-      card.addEventListener("mouseenter", function () {
-        card.classList.add("shadow-lg");
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <h4>Custom Bouquets</h4>
+            <p>Handcrafted arrangements for any occasion.</p>
+          </div>
+          <div class="col-md-4">
+            <h4>Wedding Arrangements</h4>
+            <p>Floral designs to make your big day special.</p>
+          </div>
+          <div class="col-md-4">
+            <h4>Same Day Delivery</h4>
+            <p>Fresh flowers delivered right to your doorstep.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Get in Touch</h2>
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              rows="4"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-danger">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3 bg-danger">
+      <p>&copy; 2025 Lois' Flower Shop. All Rights Reserved.</p>
+      <a
+        href="https://www.google.com/maps/place/Lois'+Flower+Shop/@30.3598032,-89.1635514,17z/data=!3m1!4b1!4m6!3m5!1s0x889c3cc9d26cfaa1:0x7194bedffad4e326!8m2!3d30.3598032!4d-89.1609765!16s%2Fg%2F11bbxkzq00?entry=ttu"
+        >Visit the flower shop in person!</a
+      >
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // JavaScript to add a hover effect to each card using Bootstrap's shadow class
+      document.querySelectorAll(".card").forEach(function (card) {
+        card.addEventListener("mouseenter", function () {
+          card.classList.add("shadow-lg");
+        });
+        card.addEventListener("mouseleave", function () {
+          card.classList.remove("shadow-lg");
+        });
       });
-      card.addEventListener("mouseleave", function () {
-        card.classList.remove("shadow-lg");
-      });
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    </script>
+  </body>
 </html>
